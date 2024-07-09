@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scooby spa</title>
+        <link rel="stylesheet" href="css/desktop_style.css">
+        <link rel="stylesheet" href="css/laptop_style.css">
+        <link rel="stylesheet" href="css/tablet_style.css">
+        <link rel="stylesheet" href="css/phone_style.css">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const navbarHeight = document.querySelector('.navbar').offsetHeight;
+          
+              document.querySelectorAll('.navbar a, .services a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  const targetId = this.getAttribute('href').substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  
+                  window.scrollTo({
+                    top: (targetElement.offsetTop) - navbarHeight,
+                    behavior: 'smooth'
+                  });
+                });
+              });
+            });
+          </script>
+          
+    </head>
+
+    <body>
+        <div class="top">
+            <div class="bizname">
+                <p>
+                    Scooby Doo Dog Washing and Grooming Spa
+                </p>
+            </div>
+        
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#service_agreement">Service Agreement</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="home" id="home">
+                <div>
+                    <table>
+                        <tr>
+                            <td colspan="3">
+                                <div id="dog-top">
+                                    <p>
+                                        We specialize in providing top-notch dog washing and grooming services right here at Kilimani. At our spa, every dog receives the care and attention they deserve to look and feel their best.
+                                    </p>
+                                    <!-- <img src="imgs/1.jpg" alt="image of cute dog wrapped in towel" id="dog-top"> -->
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="imgs/2.jpg" alt="" class="dog-bottom"></td>
+                            <td><img src="imgs/3.jpg" alt="" class="dog-bottom"></td>
+                            <td><img src="imgs/4.jpg" alt="" class="dog-bottom"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="services" id="services">
+                <div>
+                    <table>
+                        <tr>
+                            <td colspan="2">Services</td>
+                        </tr>
+
+                        <tr>
+                            <td id="basic-wash">
+                                <a href="#contact">
+                                <div id="basic-wash-info">
+                                    <ol>
+                                        <li>Price: $15</li>
+                                        <li>30 to 45 minutes</li>
+                                        <li>Wash, Blow-dry, Brushing</li>
+                                    </ol>
+                                </div>
+                                Basic Wash</a>
+                            </td>
+                            <td id="full-grooming">
+                                <a href="#contact">
+                                <div id="full-grooming-info">
+                                    <ol>
+                                        <li>Price: $20</li>
+                                        <li>1.5 to 2 hours</li>
+                                        <li>Wash, Haircut, Blow-dry, Nail trimming, Ear cleaning</li>
+                                    </ol>
+                                </div>
+                                Full Grooming</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td id="deluxe-spa">
+                                <a href="#contact">
+                                <div id="deluxe-spa-info">
+                                    <ol>
+                                        <li>Price: $40</li>
+                                        <li>2 to 2.5 hours</li>
+                                        <li>Full Grooming</li>
+                                        <li>Spa Treatment(massage & paw balm application)</li>
+                                    </ol>
+                                </div>
+                                Deluxe Spa</a>
+                            </td>
+                            <td id="nail-ear">
+                                <a href="#contact">
+                                <div id="nail-ear-info">
+                                    <ol>
+                                        <li>Price: $10</li>
+                                        <li>10 to 15 minutes</li>
+                                    </ol>
+                                </div>
+                                Nail Trimming Only / Ear Cleaning Only</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="service_agreement" id="service_agreement">
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Service Agreement
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>Booking</td>
+                        <td>
+                            Bookings can be made through our website or by contacting us directly. By booking, you agree to provide accurate information.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Payment</td>
+                        <td>Payment is due at the time of service. We accept cash, credit/debit cards, and mobile payments.</td>
+                    </tr>
+                    <tr>
+                        <td>Cancellations</td>
+                        <td>Cancellations must be made at least 24 hours in advance to avoid a cancellation fee.</td>
+                    </tr>
+                    <tr>
+                        <td>Health and Safety</td>
+                        <td>We reserve the right to refuse service to pets that pose a health or safety risk.</td>
+                    </tr>
+                    <tr>
+                        <td>Satisfaction Guarantee</td>
+                        <td>If you are not satisfied with our service, please let us know immediately, and we will do our best to address your concerns.</td>
+                    </tr>
+                    <tr>
+                        <td>Liability</td>
+                        <td>While we take utmost care in handling your pets, Scooby Doo Dog Washing and Grooming Spa is not liable for any injuries or health issues that may arise during or after the grooming process.</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="contact" id="contact">
+                <table>
+                    <tr>
+                        <th colspan="2">Contact Us</th>
+                    </tr>
+                    <tr>
+                        <td>Phone: </td>
+                        <td>0712321618 / 0725294241</td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td><a href="mailto:constanceotieno88@gmail.com">constanceotieno88@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Location: </td>
+                        <td>Kilimani</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Hours: </td>
+                        <td>Monday to Monday, 9 AM to 5 PM</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>

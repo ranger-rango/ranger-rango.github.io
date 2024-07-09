@@ -1,0 +1,362 @@
+* {
+    background-color: #76aaa8;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        display: grid;
+    }
+    .top {
+        height: 17vh;
+        width: 100vw;
+        position: fixed;
+    }
+
+    .bizname {
+        height: 10vh;
+        width: 100vw;
+        /* background-color: black; */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border-bottom: 0.3px solid black;
+    }
+
+    .bizname p {
+        font-family: 'Caveat', Times;
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+    .navbar {
+        height: 7vh;
+        width: 100vw;
+        /* background-color: white; */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border-bottom: 0.3px solid black;
+    }
+
+    .navbar ul {
+        height: 7vh;
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        width: 22.5vw;
+        /* border: 0.5px solid green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        color: black;
+        font-family: 'Oswald', Times;
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .navbar ul li a:active {
+        color: white;
+    }
+
+    .container {
+        margin-top: 17vh;
+        overflow: auto;
+        display: grid;
+    }
+
+    .home {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding-top: 10vh;
+    }
+
+    #dog-top {
+        height: 55vh;
+        width: 69vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-image: url('../imgs/1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #dog-top p {
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1em;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .dog-bottom {
+        height: 23vh;
+        width: 23vw;
+    }
+
+    .home table {
+        border-collapse: collapse;
+    }
+
+    .home tr, td {
+        border: none;
+    }
+
+    .services {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10vh;
+    }
+
+    .services a {
+        color: white;
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    .services a:active {
+        color: rgb(30, 255, 0);
+    }
+
+    .services td {
+        text-align: center;
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+
+    .services td:active {
+        cursor: pointer;
+    }
+
+    #basic-wash {
+        height: 35vh;
+        width: 35vw;
+        color: white;
+        background-image: url('../imgs/basic_wash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+    }
+
+    #basic-wash-info {
+        height: 38vh;
+        width: 35vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 5s ease, color 5s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #basic-wash-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #basic-wash-info:active {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+        transition: none;
+    }
+
+    #basic-wash-info:active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: holdActive 5s forwards;
+    }
+
+    #full-grooming {
+        height: 35vh;
+        width: 35vw;
+        color: white;
+        background-image: url('../imgs/full_grooming.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #full-grooming-info {
+        height: 38vh;
+        width: 35vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 5s ease, color 5s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #full-grooming-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #full-grooming-info:active {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+        transition: none;
+    }
+
+    #full-grooming-info:active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: holdActive 5s forwards;
+    }
+
+    #deluxe-spa {
+        height: 35vh;
+        width: 35vw;
+        color: white;
+        background-image: url('../imgs/deluxe_spa.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #deluxe-spa-info {
+        height: 35vh;
+        width: 35vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 5s ease, color 5s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #deluxe-spa-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #deluxe-spa-info:active {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+        transition: none;
+    }
+
+    #deluxe-spa-info:active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: holdActive 5s forwards;
+    }
+
+    #nail-ear {
+        height: 35vh;
+        width: 35vw;
+        color: white;
+        background-image: url('../imgs/nails_ears.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #nail-ear-info {
+        height: 35vh;
+        width: 35vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 5s ease, color 5s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #nail-ear-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #nail-ear-info:active {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+        transition: none;
+    }
+
+    #nail-ear-info:active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: holdActive 5s forwards;
+    }
+
+    .service_agreement {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 10vh;
+    }
+
+    .service_agreement table {
+        height: 45vh;
+        width: 90vw;
+    }
+
+    .service_agreement th, td {
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+
+    .contact {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 10vh;
+    }
+
+    .contact table {
+        height: 22.5vh;
+        width: 45vw;
+        /* margin-top: -37vh; */
+    }
+
+    .contact th, td {
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+}

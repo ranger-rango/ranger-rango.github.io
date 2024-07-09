@@ -1,0 +1,319 @@
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+    }
+    .top {
+        height: 17vh;
+        width: 100vw;
+        position: fixed;
+    }
+
+    .bizname {
+        height: 10vh;
+        width: 100vw;
+        /* background-color: black; */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border-bottom: 0.3px solid black;
+    }
+
+    .bizname p {
+        font-family: 'Caveat', Times;
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+    .navbar {
+        height: 7vh;
+        width: 100vw;
+        /* background-color: white; */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border-bottom: 0.3px solid black;
+    }
+
+    .navbar ul {
+        height: 7vh;
+        width: 72vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        width: 18vw;
+        /* border: 0.5px solid green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        color: black;
+        font-family: 'Oswald', Times;
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .navbar ul li a:hover {
+        color: white;
+    }
+
+    .container {
+        margin-top: 17vh;
+        overflow: auto;
+        display: grid;
+    }
+
+    .home {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding-top: 10vh;
+    }
+
+    #dog-top {
+        height: 64vh;
+        width: 45vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-image: url('../imgs/1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #dog-top p {
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1em;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .dog-bottom {
+        height: 18vh;
+        width: 15vw;
+    }
+
+    .home table {
+        border-collapse: collapse;
+    }
+
+    .home tr, td {
+        border: none;
+    }
+
+    .services {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10vh;
+    }
+
+    .services a {
+        color: white;
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    .services a:hover {
+        color: rgb(30, 255, 0);
+    }
+
+    .services td {
+        text-align: center;
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .services td:hover {
+        cursor: pointer;
+    }
+
+    #basic-wash {
+        height: 29vh;
+        width: 23vw;
+        color: white;
+        background-image: url('../imgs/basic_wash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+    }
+
+    #basic-wash-info {
+        height: 32vh;
+        width: 23vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 1s ease, color 1.1s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #basic-wash-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #basic-wash-info:hover {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+    }
+
+    #full-grooming {
+        height: 29vh;
+        width: 23vw;
+        color: white;
+        background-image: url('../imgs/full_grooming.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #full-grooming-info {
+        height: 32vh;
+        width: 23vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 1s ease, color 1.1s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #full-grooming-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #full-grooming-info:hover {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+    }
+
+    #deluxe-spa {
+        height: 29vh;
+        width: 23vw;
+        color: white;
+        background-image: url('../imgs/deluxe_spa.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #deluxe-spa-info {
+        height: 29vh;
+        width: 23vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 1s ease, color 1.1s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #deluxe-spa-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #deluxe-spa-info:hover {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+    }
+
+    #nail-ear {
+        height: 29vh;
+        width: 23vw;
+        color: white;
+        background-image: url('../imgs/nails_ears.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #nail-ear-info {
+        height: 29vh;
+        width: 23vw;
+        background-color: rgba(118, 170, 168, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: .8em;
+        transition: background-color 1s ease, color 1.1s ease;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #nail-ear-info ol, li {
+        background-color: rgba(118, 170, 168, 0);
+    }
+
+    #nail-ear-info:hover {
+        background-color: rgba(118, 170, 168, .9);
+        color: black;
+    }
+
+    .service_agreement {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 10vh;
+    }
+
+    .service_agreement table {
+        height: 45vh;
+        width: 60vw;
+    }
+
+    .service_agreement th, td {
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .contact {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 10vh;
+    }
+
+    .contact a {
+        color: black;
+    }
+
+    .contact a:hover {
+        color: white;
+    }
+
+    .contact table {
+        height: 22vh;
+        width: 25vw;
+        /* margin-top: -37vh; */
+    }
+
+    .contact th, td {
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+}
