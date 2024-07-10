@@ -16,7 +16,7 @@
             document.addEventListener("DOMContentLoaded", function() {
               const navbarHeight = document.querySelector('.navbar').offsetHeight;
           
-              document.querySelectorAll('.navbar a, .services a').forEach(anchor => {
+              document.querySelectorAll('.bizname a, .navbar a, .services a').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                   e.preventDefault();
                   const targetId = this.getAttribute('href').substring(1);
@@ -36,14 +36,16 @@
     <body>
         <div class="top">
             <div class="bizname">
-                <p>
+                <a href="#home">Scooby Doo Dog Washing and Grooming Spa</a>
+                <!-- <p>
                     Scooby Doo Dog Washing and Grooming Spa
-                </p>
+                </p> -->
             </div>
         
             <div class="navbar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <!-- <li><a href="#home"><img src="icons/home.png" alt="home"></a></li> -->
+                    <li><a href="#discover">Discover</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#service_agreement">Service Agreement</a></li>
                     <li><a href="#contact">Contact Us</a></li>
@@ -76,6 +78,30 @@
                 </div>
             </div>
 
+            <div class="discover" id="discover">
+                <table>
+                    <tr>
+                        <th>Discover</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="video-container">
+                                <video id="video" width="600">
+                                    <source src="vids/scooby_spa.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="controls">
+                                    <img id="play-pause" class="play-pause" src="icons/play.png" alt="Play">
+                                    <button id="mute" class="mute">Mute</button>
+                                </div>
+                            </div>
+                            <script src="js/vid.js"></script>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- <script src="js/vid.js"></script> -->
+
             <div class="services" id="services">
                 <div>
                     <table>
@@ -101,7 +127,9 @@
                                     <ol>
                                         <li>Price: $20</li>
                                         <li>1.5 to 2 hours</li>
-                                        <li>Wash, Haircut, Blow-dry, Nail trimming, Ear cleaning</li>
+                                        <li>Wash, Haircut, Blow-dry</li>
+                                        <li>Nail trimming</li>
+                                        <li>Ear cleaning</li>
                                     </ol>
                                 </div>
                                 Full Grooming</a>
@@ -116,7 +144,7 @@
                                         <li>Price: $40</li>
                                         <li>2 to 2.5 hours</li>
                                         <li>Full Grooming</li>
-                                        <li>Spa Treatment(massage & paw balm application)</li>
+                                        <li>Spa Treatment with: <br> (a) massage <br> (b) paw balm application)</li>
                                     </ol>
                                 </div>
                                 Deluxe Spa</a>

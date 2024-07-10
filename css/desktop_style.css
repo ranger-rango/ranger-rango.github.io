@@ -6,6 +6,7 @@
         height: 17vh;
         width: 100vw;
         position: fixed;
+        z-index: 10;
     }
 
     .bizname {
@@ -18,10 +19,11 @@
         border-bottom: 0.3px solid black;
     }
 
-    .bizname p {
+    .bizname a {
         font-family: 'Caveat', Times;
         font-weight: 400;
         font-size: 2em;
+        color: black;
     }
 
     .navbar {
@@ -55,7 +57,7 @@
     .navbar ul li a {
         color: black;
         font-family: 'Oswald', Times;
-        font-weight: 300;
+        font-weight: 350;
         font-size: 1.3em;
     }
 
@@ -92,7 +94,7 @@
 
     #dog-top p {
         font-family: 'Oswald';
-        font-weight: 300;
+        font-weight: 350;
         font-size: 1em;
         background-color: rgba(255, 255, 255, 0);
     }
@@ -108,6 +110,72 @@
 
     .home tr, td {
         border: none;
+    }
+
+    .discover {
+        height: 83vh;
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
+    }
+
+    .discover th {
+        font-family: 'Oswald';
+        font-weight: 350;
+        font-size: 1.3em;
+    }
+    
+    .video-container {
+        height: 65vh;
+        width: 80vw;
+    }
+
+    video {
+        position: absolute;
+        width: 80vw;
+        height: 65vh;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    .controls {
+        position: absolute;
+        width: 80vw;
+        height: 65vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        border: none;
+        background-color: rgba(118, 170, 168, 0);
+    }
+    
+    .play-pause {
+        width: 4em;
+        height: 4em;
+        cursor: pointer;
+        pointer-events: all;
+        background-color: rgba(118, 170, 168, 0);
+        margin-top: 18vw;
+    }
+    
+    .mute {
+        height: 3em;
+        width: 5em;
+        margin-top: 10vh;
+        margin-left: -33vw;
+        background-color: #76aaa8;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        pointer-events: all;
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: .8em;
     }
 
     .services {
@@ -131,7 +199,7 @@
     .services td {
         text-align: center;
         font-family: 'Oswald';
-        font-weight: 300;
+        font-weight: 350;
         font-size: 1.3em;
     }
 
@@ -284,7 +352,7 @@
 
     .service_agreement th, td {
         font-family: 'Oswald';
-        font-weight: 300;
+        font-weight: 350;
         font-size: 1.3em;
     }
 
@@ -313,7 +381,7 @@
 
     .contact th, td {
         font-family: 'Oswald';
-        font-weight: 300;
+        font-weight: 350;
         font-size: 1.3em;
     }
 }
